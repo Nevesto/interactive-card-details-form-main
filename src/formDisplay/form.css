@@ -100,4 +100,9 @@ input.error {
     .form form .cvv {
         width: 40%;
     }
+
+    .form form .fix-cvc {
+        top: -7.5rem;
+        left: 12.5rem;
+    }
 }

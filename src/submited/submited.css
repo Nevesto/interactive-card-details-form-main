@@ -49,3 +49,11 @@
 button {
     width: 100%;
 }
+
+@media screen and (max-width: 375px) {    
+    .submited {
+        left: 1.25rem;
+        top: -6rem;
+        max-width: 90%;
+    }
+}
