@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+.cardDisplay {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 10rem;
+    right: -12rem;
+    width: 25%;
+}
+
+.cardDisplay img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.7rem; /* white border and noises */
+}
+
+.cardDisplay img:nth-child(2) {
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+}
+
+.cardLogo {
+    position: relative;
+    top: -21rem;
+    left: 14rem;
+}
+
+.cardInfos .cardNumber {
+    position: relative;
+    top: -18rem;
+    left: 14.3rem;
+    font-size: 2rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.125rem; 
+}
+
+.cardInfos .cardName {
+    position: relative;
+    top: -19rem;
+    left: 14.3rem;
+    font-size: 1.2rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.125rem; 
+}
+
+.cardInfos .cardDate {
+    position: relative;
+    top: -21.6rem;
+    left: 36rem;
+    font-size: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.125rem; 
+}
+
+.cardInfos .backCardNumber {
+    position: relative;
+    top: -11.9rem;
+    left: 40rem;
+    font-size: 1.2rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.125rem; 
+}
+
+@media only screen and (max-width: 375px) {
+    .cardDisplay {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .cardDisplay img {
+        position: relative;
+        width: 80%;
+    }
+    
+    .cardDisplay img:nth-child(1) {
+        position: relative;        
+        top: 8rem;
+        left: 1rem;
+        z-index: 2;
+    }
+
+    .cardDisplay img:nth-child(2) {
+        position: relative;
+        top: -8rem;
+        left: 4rem;
+        width: 300px;
+        z-index: 1;
+    }
+
+    .cardLogo {
+        position: relative;
+        top: -11rem;
+        left: 2rem;
+        z-index: 3;
+        max-width: 4rem;
+    }
+
+    .cardInfos .cardNumber {
+        position: relative;
+        top: -10.5rem;
+        left: 2.5rem;
+        font-size: 1.2rem;
+        z-index: 3;
+    }
+
+    .cardInfos .cardName {
+        position: relative;
+        top: -10.8rem;
+        left: 2.5rem;
+        font-size: 0.7rem;
+        z-index: 3;
+    }
+
+    .cardInfos .cardDate {
+        position: relative;
+        top: -12.4rem;
+        left: 15.5rem;
+        font-size: 0.7rem;
+        z-index: 3;
+    }
+
+    .backCardNumber {
+        position: relative;
+        top: -7.5rem;
+        left: -30rem;
+        font-size: 1rem;
+        z-index: 3;
+    }
+
+    .cardInfos .backCardNumber {
+        position: absolute;
+        top: 6.7rem;
+        left: 18rem;
+        font-size: 1rem;
+        z-index: 2;
+    }
+}

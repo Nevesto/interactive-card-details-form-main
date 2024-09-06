@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+.form {
+    position: relative;
+    top: -34rem;
+    left: 50%;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    color: var(--Very-dark-violet);
+    letter-spacing: 0.125rem;
+}
+
+.form form input {
+    padding: 1rem;
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 0.5rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--Dark-grayish-violet);
+    width: 100%;
+    box-sizing: border-box;
+}
+.exp-date {
+    width: 50%;
+}
+.date-cvv {
+    display: flex;
+    gap: 1rm;
+}
+
+.form form .exp-date input {
+    width: 45%;
+    margin-right: 0.5rem;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+    background-color: var(--Very-dark-violet);
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: hsl(278, 68%, 59%);
+}
+
+input.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.fix-cvc {
+    position: relative;
+    top: -7.5rem;
+    left: 14.5rem;
+}
+
+@media screen and (max-width: 375px) {    
+    .form {
+        top: -10rem;
+        left: 1.5rem;
+        height: 100%;
+    }
+
+    .form form {
+        max-width: 325px;
+    }
+
+    .form form .exp-date {
+        width: 60%;
+    }
+
+    .form form .cvv {
+        width: 40%;
+    }
+}
